@@ -1,0 +1,31 @@
+
+.hex1 {
+position: relative;
+height: 100px;
+width: 172px;
+float: left;
+margin-top: 10%;
+border-left:1px solid #000;
+border-right:1px solid #000;
+z-index: 1;
+line-height: 100px;    
+}
+
+.hex1:before,
+.hex1:after {
+ content: "";
+    position: absolute;
+    width:100%;
+    height: 100%;
+    border-left:2px solid #000;
+    border-right:2px solid #000;
+}
+
+
+.hex1:before {
+     transform: rotate(60deg);
+}
+
+.hex1:after {
+    transform: rotate(-60deg);
+}
